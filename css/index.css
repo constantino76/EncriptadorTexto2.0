@@ -1,0 +1,113 @@
+.contenedor {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 1200px;
+    height: 650px;
+    background: #CED4DA;
+    display: flex;
+    border-radius: 12px;
+  }
+  #logo{width: 30px;height: 70px;
+   
+  border-radius: 14px;
+  }
+  #imgpersona{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+  
+  
+  
+  
+  .area-c {
+    width: 400px;
+    height: 600px;
+    margin-left: 20px;
+    margin-top: 10px;
+  
+    border: none;
+  }
+  .area-c input ,.area-c:hover{
+  outline: none;
+  
+  
+  }
+  .area-c input {
+      font-size: 14px;
+      color:rgb(0, 9, 128);
+    text-align: center;
+    background: #ced4da;
+    border: 2px solid #1d3c5a;;
+  }
+  .area-resultado {
+    background-color: white;
+     display :flex;
+     flex-direction: column;
+    border-radius: 12px;
+      text-align: center;
+    height: 650px;
+    width: 300px;
+    margin-left: 350px; /*  me permite distanciar los elementos uno del otro*/
+    margin-top: 20px;
+  
+  }
+  
+  .area-resultado input:focus{
+  
+      outline:none;/* quita el efecto borde cuando nos posicionamos en el input*/
+     
+  }
+  input {
+      text-align: center;
+      color:black;
+      font-size: 14px;
+    padding: 0%;
+    border: none;
+    border-radius: 24px;
+    width: 100%;
+    height: 90%;
+  }
+  
+  button {
+    height: 50px;
+    width: 250px;
+  
+    margin-left: 34px;
+  
+    border-radius: 12px;
+  }
+  .btn-boton {
+    margin-top: 12px;
+    width: 300px;
+    margin-left: 10rem;
+  
+    display: flex;
+  }
+  body {
+    background: #ced4da;
+  }
+  #btn-desencriptar{
+  
+      background: rgb(134, 134, 156);
+  }
+  #btn-encriptar{
+  
+      background: rgb(40, 40, 82);
+  }
+  .pie-Pagina {
+  margin-left:12rem;
+    width: 350px;
+    margin-top: 70px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif ;
+    
+  }
+  .area-resultado button{
+  font-size: 12px;
+  display: none;
+  border-radius: 12px;
+  margin-left: 5rem;
+  margin-top: 8px;
+  width: 150px;
+  }
