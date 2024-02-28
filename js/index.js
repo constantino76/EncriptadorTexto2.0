@@ -122,7 +122,7 @@ function encriptador(){
     function copiarTexto(){
     
         // Copiado del texto 
-     let  textocopiado= document.getElementById('resultado').value;
+     let  textocopiado= document.getElementById('resultado');
      //__________________________________________
      //clean input  resultado
      //___________________________________________
