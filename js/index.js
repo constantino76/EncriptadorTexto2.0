@@ -124,7 +124,7 @@ function encriptador(){
      //clean input  resultado
      //___________________________________________
     alert("Copiando al portapeles");
-     document.getElementById('resultado').value=''
+     document.getElementById('resultado').value="";
     
     
      //uso del portapapeles del navegador
