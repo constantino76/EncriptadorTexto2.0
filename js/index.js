@@ -120,14 +120,6 @@ function encriptador(){
     
     //funcion para el copiado del texto
     function copiarTexto(){
-        // verificamos si tenemos permiso para copiar en el portapapeles
-
-        navigator.permissions.query({ name: "write-on-clipboard" })
-        .then((resultado) => {
-          if (resultado.state == "granted" || resultado.state == "prompt") {
-            alert("¡Permiso de escritura concedido!");
-          }
-        });
     
         // Copiado del texto 
      let  textocopiado= document.getElementById('resultado').value;
