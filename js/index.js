@@ -1,3 +1,6 @@
+
+
+
 function encriptador(){
     var texto = document.getElementById('texto').value
     document.getElementById('texto').value="";
@@ -117,13 +120,14 @@ function encriptador(){
     
     //funcion para el copiado del texto
     function copiarTexto(){
+        // verificamos si tenemos permiso para copiar en el portapapeles
 
         navigator.permissions.query({ name: "write-on-clipboard" })
-.then((resultado) => {
-  if (resultado.state == "granted" || resultado.state == "prompt") {
-    alert("¡Permiso de escritura concedido!");
-  }
-});
+        .then((resultado) => {
+          if (resultado.state == "granted" || resultado.state == "prompt") {
+            alert("¡Permiso de escritura concedido!");
+          }
+        });
     
         // Copiado del texto 
      let  textocopiado= document.getElementById('resultado').value;
@@ -131,10 +135,12 @@ function encriptador(){
      //clean input  resultado
      //___________________________________________
     alert("Copiando al portapeles");
-     document.getElementById('resultado').value="";
-    
-    
+
      //uso del portapapeles del navegador
-    navigator.clipboard.writeText(textocopiado.value);
+     navigator.clipboard.writeText(document.getElementById('resultado').value);
+    // document.getElementById('resultado').value="";
+    
+    
+    
     
     }
