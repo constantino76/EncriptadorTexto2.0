@@ -129,7 +129,7 @@ function encriptador(){
     
 
      //uso del portapapeles del navegador
-      navigator.clipboard.writeText(textocopiado.textContent);
+     navigator.clipboard.writeText(textocopiado.innerText);
     // document.getElementById('resultado').value="";
     
     
