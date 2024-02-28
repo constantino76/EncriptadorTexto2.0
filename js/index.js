@@ -126,10 +126,10 @@ function encriptador(){
      //__________________________________________
      //clean input  resultado
      //___________________________________________
-    alert("Copiando al portapeles");
+    
 
      //uso del portapapeles del navegador
-     navigator.clipboard.writeText(document.getElementById('resultado').value);
+      navigator.clipboard.writeText(textocopiado.value);
     // document.getElementById('resultado').value="";
     
     
