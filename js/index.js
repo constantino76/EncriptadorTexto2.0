@@ -129,5 +129,5 @@ function encriptador(){
     
      //uso del portapapeles del navegador
     navigator.clipboard.writeText(textocopiado.value);
-    document.getElementById("resultado").value='';
+    
     }
