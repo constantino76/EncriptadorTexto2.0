@@ -4,7 +4,7 @@ function encriptador(){
     var textoencriptado="";
     var etiqueta= document.getElementById('lb-mensaje');
     ocultarElementos()
-    Alert(texto)
+    alert(texto);
     var caracter=""
     for(var cont =0;cont<texto.length;cont++){
     
