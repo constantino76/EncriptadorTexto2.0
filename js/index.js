@@ -124,10 +124,10 @@ function encriptador(){
      //clean input  resultado
      //___________________________________________
     
-     document.getElementById("resultado").value='';
+     
     
     
      //uso del portapapeles del navegador
     navigator.clipboard.writeText(textocopiado.value);
-    
+    document.getElementById("resultado").value='';
     }
