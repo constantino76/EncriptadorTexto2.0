@@ -135,7 +135,7 @@ function encriptador(){
 
     try {
       // Intentar copiar el texto al portapapeles
-      navigator.clipboard.writeText(elementoTemporal.value);
+      navigator.clipboard.writeText(elementoTemporal);
       console.log("Texto copiado al portapapeles: " + document.getElementById('resultado').value)
     } catch (err) {
       console.error('Error al copiar al portapapeles: ', err);
