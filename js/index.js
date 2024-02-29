@@ -64,6 +64,11 @@ function encriptador(){
     }
     //gaitober
     function desemcriptar(cadena){
+
+
+        let btn_copy = document.getElementById('btn-copiar');
+        btn_copy.textContent="Copiar ";
+        btn_copy.style.backgroundColor='#F2F4F4';
         document.getElementById('resultado').value='';
         document.getElementById('texto').value
     //var palabradesincriptada="";
