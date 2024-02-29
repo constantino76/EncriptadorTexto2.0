@@ -128,12 +128,12 @@ function encriptador(){
      //clean input  resultado
      //___________________________________________
     
-     document.getElementById("resultado").value='';
     
-    textocopiado.select()
+    
+    document .getElementById("resultado").ariaSelected();
      //uso del portapapeles del navegador
     navigator.clipboard.writeText(textocopiado)
-
+    document.getElementById("resultado").value=''
     .then(() => {
         alert("Texto copiado al portapapeles: " + textoACopiar);
       })
