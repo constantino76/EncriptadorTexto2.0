@@ -123,22 +123,25 @@ function encriptador(){
     
         alert("funcion copiar texto",null);
         // Copiado del texto 
-     let  textocopiado= document.getElementById('resultado').value;
-     //__________________________________________
-     //clean input  resultado
-     //___________________________________________
     
-    
-    
-    document .getElementById("resultado").ariaSelected;
-     //uso del portapapeles del navegador
-    navigator.clipboard.writeText(   document .getElementById("resultado").value)
- 
-    .then(() => {
-        alert("Texto copiado al portapapeles: " + textoACopiar);
-      })
-      .catch(err => {
-        console.error('Error al copiar al portapapeles: ', err);
-      });
+     var elementoTemporal = document.createElement("textarea");
+    elementoTemporal.value = document.getElementById(resultado);
+
+    // Agregar el elemento al cuerpo del documento
+    document.body.appendChild(elementoTemporal);
+
+    // Seleccionar el texto
+    elementoTemporal.select();
+
+    try {
+      // Intentar copiar el texto al portapapeles
+      document.execCommand("copy");
+      console.log("Texto copiado al portapapeles: " + textoACopiar);
+    } catch (err) {
+      console.error('Error al copiar al portapapeles: ', err);
+    } finally {
+      // Eliminar el elemento temporal
+      document.body.removeChild(elementoTemporal);
+    }
     
     }
