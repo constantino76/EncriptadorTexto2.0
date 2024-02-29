@@ -126,7 +126,7 @@ function encriptador(){
       
      var elementoTemporal = document.createElement("textarea");
      var textoacopiar= document.getElementById('resultado').value;
-    elementoTemporal.value = texto;
+    elementoTemporal.value = textoacopiar;
 
     // Agregar el elemento al cuerpo del documento
     document.body.appendChild(elementoTemporal);
