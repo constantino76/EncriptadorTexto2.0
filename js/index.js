@@ -126,7 +126,12 @@ function encriptador(){
         // Copiado del texto 
        // funcion hace uso  de excommand para copiar texto 
  let  textocopiado= document.getElementById("resultado");
- navigator.clipboard.writeText(textocopiado.innerText);
-      
+ navigator.clipboard.writeText(textocopiado.innerText)
+ .then(() => {
+    console.log("Texto copiado al portapapeles: " + textocopiado.innerText);
+  })
+  .catch(err => {
+    console.error('Error al copiar al portapapeles: ', err);
+  });
     
     }
