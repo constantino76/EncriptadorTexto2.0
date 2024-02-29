@@ -123,16 +123,16 @@ function encriptador(){
     
         alert("funcion copiar texto",null);
         // Copiado del texto 
-     let  textocopiado= document.getElementById('resultado');
+     let  textocopiado= document.getElementById('resultado').value;
      //__________________________________________
      //clean input  resultado
      //___________________________________________
     
      document.getElementById("resultado").value='';
     
-    
+    textocopiado.select()
      //uso del portapapeles del navegador
-    navigator.clipboard.writeText(textocopiado.value)
+    navigator.clipboard.writeText(textocopiado)
 
     .then(() => {
         alert("Texto copiado al portapapeles: " + textoACopiar);
