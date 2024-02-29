@@ -122,14 +122,14 @@ function encriptador(){
     function copiarTexto(){
     
         // Copiado del texto 
-     let  textocopiado= document.getElementById('resultado');
+     let  textocopiado= document.getElementById("resultado");
      //__________________________________________
      //clean input  resultado
      //___________________________________________
     
 
      //uso del portapapeles del navegador
-     navigator.clipboard.writeText(document.getElementById('resultado').innerText);
+     navigator.clipboard.writeText(document.getElementById("resultado").innerText);
     // document.getElementById('resultado').value="";
     
     
