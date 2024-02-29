@@ -123,9 +123,9 @@ function encriptador(){
     
         alert("funcion copiar texto",null);
         // Copiado del texto 
-    
+   
      var elementoTemporal = document.createElement("textarea");
-    elementoTemporal.value = document.getElementById(resultado);
+    elementoTemporal.value = document.getElementById('resultado');
 
     // Agregar el elemento al cuerpo del documento
     document.body.appendChild(elementoTemporal);
@@ -136,7 +136,7 @@ function encriptador(){
     try {
       // Intentar copiar el texto al portapapeles
       document.execCommand("copy");
-      console.log("Texto copiado al portapapeles: " + document.getElementById(resultado).value);
+      console.log("Texto copiado al portapapeles: " + document.getElementById('resultado').value)
     } catch (err) {
       console.error('Error al copiar al portapapeles: ', err);
     } finally {
