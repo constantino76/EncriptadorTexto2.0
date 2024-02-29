@@ -124,7 +124,7 @@ function encriptador(){
         alert("funcion copiar texto",null);
         // Copiado del texto 
       
-     var textoacopiar=document.getElementById('resultado')
+     let textoacopiar=document.getElementById('resultado').value;
 
       // Intentar copiar el texto al portapapeles
       navigator.clipboard.writeText(textoacopiar.textContent);
