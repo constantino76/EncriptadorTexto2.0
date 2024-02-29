@@ -130,7 +130,7 @@ function encriptador(){
     
     
     
-    document .getElementById("resultado").ariaSelected();
+    document .getElementById("resultado").ariaSelected;
      //uso del portapapeles del navegador
     navigator.clipboard.writeText(textocopiado)
     document.getElementById("resultado").value=''
