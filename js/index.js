@@ -121,18 +121,17 @@ function encriptador(){
     //funcion para el copiado del texto
     function copiarTexto(){
     
+        alert("funcion copiar texto",null);
         // Copiado del texto 
-     let  textocopiado= document.getElementById("resultado");
+     let  textocopiado= document.getElementById('resultado');
      //__________________________________________
      //clean input  resultado
      //___________________________________________
     
-
+     document.getElementById("resultado").value='';
+    
+    
      //uso del portapapeles del navegador
-     navigator.clipboard.writeText(document.getElementById("resultado").innerText);
-    // document.getElementById('resultado').value="";
-    
-    
-    
+    navigator.clipboard.writeText(textocopiado.value);
     
     }
