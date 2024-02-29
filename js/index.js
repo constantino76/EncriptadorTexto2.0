@@ -120,12 +120,13 @@ function encriptador(){
     
     //funcion para el copiado del texto
     function copiarTexto(){
-    
-       
+    let btn_copy = document.getElementById('btn-copiar');
+       btn_copy.textContent="Copiado ";
+       btn_copy.style.backgroundColor='5';
         // Copiado del texto 
        // funcion hace uso  de excommand para copiar texto 
  let  textocopiado= document.getElementById("resultado");
- navigator.clipboard.writeText(textocopiado.value);
+ navigator.clipboard.writeText(textocopiado.innerText);
       
     
     }
