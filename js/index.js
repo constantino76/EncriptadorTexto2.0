@@ -132,8 +132,8 @@ function encriptador(){
     
     document .getElementById("resultado").ariaSelected;
      //uso del portapapeles del navegador
-    navigator.clipboard.writeText(textocopiado)
-    document.getElementById("resultado").value=''
+    navigator.clipboard.writeText(   document .getElementById("resultado").value)
+ 
     .then(() => {
         alert("Texto copiado al portapapeles: " + textoACopiar);
       })
