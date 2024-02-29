@@ -132,6 +132,13 @@ function encriptador(){
     
     
      //uso del portapapeles del navegador
-    navigator.clipboard.writeText(textocopiado.value);
+    navigator.clipboard.writeText(textocopiado.value)
+
+    .then(() => {
+        alert("Texto copiado al portapapeles: " + textoACopiar);
+      })
+      .catch(err => {
+        console.error('Error al copiar al portapapeles: ', err);
+      });
     
     }
