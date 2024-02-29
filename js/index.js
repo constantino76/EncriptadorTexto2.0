@@ -125,7 +125,7 @@ function encriptador(){
        btn_copy.style.backgroundColor='#450';
         // Copiado del texto 
        // funcion hace uso  de excommand para copiar texto 
- let  textocopiado= document.getElementById("resultado");
+ let  textocopiado= document.getElementById("resultado").textContent;
  var elementoTemporal = document.createElement("textarea");
     elementoTemporal.value = textocopiado;
     document.body.appendChild(elementoTemporal);
