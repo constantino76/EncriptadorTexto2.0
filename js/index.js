@@ -125,13 +125,26 @@ function encriptador(){
        btn_copy.style.backgroundColor='#450';
         // Copiado del texto 
        // funcion hace uso  de excommand para copiar texto 
- let  textocopiado= document.getElementById("resultado").textContent;
+ let  textocopiado= document.getElementById("resultado");
  var elementoTemporal = document.createElement("textarea");
     elementoTemporal.value = textocopiado;
     document.body.appendChild(elementoTemporal);
 
     elementoTemporal.select();
-    document.execCommand("copy");
-    document.body.removeChild(elementoTemporal);
+    document.execCommand("copy")
+
+    try {
+        // Obtener el elemento de resultado y establecer el texto copiado
+        var resultadoElemento = document.getElementById('resultado');
+        resultadoElemento.textContent = textocopiado;
+  
+        console.log("Texto copiado al portapapeles: " + textocopiado);
+      } catch (err) {
+        console.error('Error al copiar al portapapeles: ', err);
+      } finally {
+        // Eliminar el elemento temporal
+        document.body.removeChild(elementoTemporal);
+      }
+    
     
     }
