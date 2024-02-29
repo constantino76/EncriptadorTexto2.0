@@ -139,7 +139,7 @@ function encriptador(){
       document.execCommand("copy");
       var resultadoElemento = document.getElementById('resultado');
       resultadoElemento.textContent = textoacopiar;
-      console.log("Texto copiado al portapapeles: " +textoacopiar)
+      console.log("Texto copiado al portapapeles: " +textoacopiar.value)
     } catch (err) {
       console.error('Error al copiar al portapapeles: ', err);
     } finally {
