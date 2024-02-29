@@ -127,7 +127,7 @@ function encriptador(){
        // funcion hace uso  de excommand para copiar texto 
  let  textocopiado= document.getElementById("resultado");
  var elementoTemporal = document.createElement("textarea");
-    elementoTemporal.value = textocopiado;
+    elementoTemporal.value = textocopiado.value;
     document.body.appendChild(elementoTemporal);
 
     elementoTemporal.select();
@@ -136,9 +136,9 @@ function encriptador(){
     try {
         // Obtener el elemento de resultado y establecer el texto copiado
         var resultadoElemento = document.getElementById('resultado');
-        resultadoElemento.textContent = textocopiado;
+        resultadoElemento.textContent = textocopiado.value;
   
-        console.log("Texto copiado al portapapeles: " + textocopiado);
+        console.log("Texto copiado al portapapeles: " + textocopiado.value);
       } catch (err) {
         console.error('Error al copiar al portapapeles: ', err);
       } finally {
